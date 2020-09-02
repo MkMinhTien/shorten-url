@@ -55,7 +55,7 @@ function them($url, &$array, &$urls)
     if (!isset($array[$url])) {
         $random = RandomString();
         $string = 'https://hideurl.herokuapp.com/server.php?url=';
-        $urls = $string . $random;
+        $urls = $random . $string;
         $array[$random] = array('url' => $url);
         return true;
     } else {
@@ -64,8 +64,8 @@ function them($url, &$array, &$urls)
 }
 function xoa($url, &$array)
 {
-    if (isset($array[$url])) {
-        unset($array[$url]);
+    if (isset($array[substr($url, (strpos($url, '=') + 1))])) {
+        unset($array[substr($url, (strpos($url, '=') + 1))]);
         return true;
     } else {
         return false;
