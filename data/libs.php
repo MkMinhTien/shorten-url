@@ -55,7 +55,7 @@ function them($url, &$array, &$urls)
     if (!isset($array[$url])) {
         $random = RandomString();
         $string = 'https://hideurl.herokuapp.com/server.php?url=';
-        $urls = $random . $string;
+        $urls = $string . $random;
         $array[$random] = array('url' => $url);
         return true;
     } else {
