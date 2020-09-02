@@ -11,9 +11,9 @@ if (isset($_POST['addurl']) && $_POST['addurl'] || isset($_POST['delurl']) && $_
                 if ($add) {
                     $addsave = save('data/urls.txt', $urls);
                     if ($addsave) {
-                        $msg = message('URL saved successfully!') . '<br>';
+                        $msg = message('URL saved successfully!');
                     } else {
-                        $msg = message('Failed to save URL!', 'danger') . '<br>';
+                        $msg = message('Failed to save URL!', 'danger');
                     }
 
                     $msg .= message('URL added successfully!');
@@ -28,9 +28,9 @@ if (isset($_POST['addurl']) && $_POST['addurl'] || isset($_POST['delurl']) && $_
                 if ($del) {
                     $delsave = save('data/urls.txt', $urls);
                     if ($delsave) {
-                        $msg = message('URL saved successfully!') . '<br>';
+                        $msg = message('URL saved successfully!');
                     } else {
-                        $msg = message('Failed to save URL!', 'danger') . '<br>';
+                        $msg = message('Failed to save URL!', 'danger');
                     }
                     $msg .= message('URL deleted successfully!');
                 } else {

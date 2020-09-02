@@ -1,3 +1,3 @@
-Admin-=-https://hideurl.herokuapp.com/Admin
-Google-=-https://www.google.com
-Youtube-=-https://www.youtube.com
+https://hideurl.herokuapp.com/server.php?url=Admin-=-https://hideurl.herokuapp.com/Admin
+https://hideurl.herokuapp.com/server.php?url=Google-=-https://www.google.com
+https://hideurl.herokuapp.com/server.php?url=Youtube-=-https://www.youtube.com

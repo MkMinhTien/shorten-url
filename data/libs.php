@@ -53,10 +53,8 @@ function save($path, $array)
 function them($url, &$array, &$urls)
 {
     if (!isset($array[$url])) {
-        $random = RandomString();
-        $string = 'https://hideurl.herokuapp.com/';
-        $urls = $string . $random;
-        $array[$random] = array('url' => $url);
+        $urls = 'https://hideurl.herokuapp.com/server.php?url=' . RandomString();
+        $array[$urls] = array('url' => $url);
         return true;
     } else {
         return false;
